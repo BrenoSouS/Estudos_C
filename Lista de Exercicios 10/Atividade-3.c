@@ -1,12 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//Exercicio feito por Breno de Souza Silva
+
 int potencia(int numero , int potencia);
+int tamanhoNumeros(int numero);
+
+//MAIN
 
 int main(){
+    int entrada;
 
-    printf("%d" , potencia(2,4));
-
+    printf("Entre com um numero: ");
+    scanf("%d" , &entrada);
+    // printf("%d" , potencia(2,4));// testando a função.
+    printf("o numero %d , possue %d casas decimais;" , entrada , tamanhoNumeros(entrada));
 
     return 0;
 }
@@ -16,7 +24,7 @@ int potencia(int numero , int potencia){
     int resultado = 1;
     for(int i = 0 ; i < potencia ; i++){
 
-        resultado = (resultado * numero);
+        resultado *= numero;
 
     }
 
@@ -27,8 +35,8 @@ int potencia(int numero , int potencia){
 
 int tamanhoNumeros(int numero){
     for(int i = 0 ; i < numero ; i++){
-        if(potencia(numero,i) > numero){
-            return i-1
+        if(potencia(10,i) > numero){
+            return i;
         }
     }
 }
