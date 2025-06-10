@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<unistd.h>
 
-//Atividade feita por Breno de Souza Silva
+//Atividade feita por Breno de Souza
 
 void Troca(int *Nro1, int *Nro2);
 
